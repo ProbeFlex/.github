@@ -70,11 +70,11 @@ Open **`http://127.0.0.1:8000/`** → log in with `demo / demo123` to explore th
                    │ REST / WebSocket
 ┌──────────────────┼──────────────────────────────────────────────┐
 │              Django API Server                                  │
-│  ┌─────────────┴─────────────┐        ┌──────────────────────┐ │
-│  │ Request/Test Engine       │  Celery│ Async Worker Pool    │ │
-│  │  • parser / validator     │<──────▶│  • run steps         │ │
-│  │  • assertion DSL          │        │  • notify hooks      │ │
-│  └─────────────┬─────────────┘        └────────────┬─────────┘ │
+│  ┌─────────────┴─────────────┐         ┌──────────────────────┐ │
+│  │ Request/Test Engine       │  Celery │ Async Worker Pool    │ │
+│  │  • parser / validator     │<──────> │  • run steps         │ │
+│  │  • assertion DSL          │         │  • notify hooks      │ │
+│  └─────────────┬─────────────┘         └────────────┬─────────┘ │
 │        PostgreSQL                Redis (broker/TTL metrics)     │
 └─────────────────────────────────────────────────────────────────┘
 ```
