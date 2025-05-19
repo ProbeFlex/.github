@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="probe-flex.png" alt="ProbeFlex Logo" width="220"/>
+  <img src="ProbeFlex.png" alt="ProbeFlex Logo" width="220"/>
 </p>
 
 ---
